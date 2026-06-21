@@ -119,48 +119,60 @@ The notebook follows a complete end-to-end machine learning workflow:
 17. Final business recommendations
 
 ---
-Visual Project Highlights
+---
+
+## Visual Project Highlights
 
 The project includes several visual outputs to support both technical evaluation and business interpretation.
 
-Target Distribution
+### Target Distribution
 
 The dataset is imbalanced, with non-default cases representing the majority class and default cases representing the minority class.
 
+![Target Distribution](images/target_distribution.png)
 
+---
 
-
-Categorical Default Risk Patterns
+### Categorical Default Risk Patterns
 
 Default risk differs across categorical borrower and loan characteristics. Loan grade, loan intent, home ownership, and previous default history show important risk patterns.
 
+![Categorical Default Risk](images/categorical_default_risk.png)
 
+---
 
-
-Random Forest Threshold Trade-Off
+### Random Forest Threshold Trade-Off
 
 Threshold analysis shows how changing the decision threshold affects precision, recall, and F1-score. This is important because credit-risk models should not rely only on the default 0.50 threshold.
 
+![Random Forest Threshold Trade-Off](images/threshold_tradeoff_random_forest.png)
 
+---
 
-
-Business Cost Simulation
+### Business Cost Simulation
 
 The business cost simulation compares different model-threshold combinations using assumed false-negative and false-positive costs. This analysis supports the final model selection.
 
+![Business Cost Simulation](images/business_cost_simulation.png)
 
+---
 
-
-Final Selected Model Confusion Matrix
+### Final Selected Model Confusion Matrix
 
 The final selected model is the Random Forest baseline model at a threshold of 0.30. The confusion matrix shows the trade-off between correctly detected defaulters, missed defaulters, false alarms, and correctly identified non-defaulters.
 
+![Final Model Confusion Matrix](images/final_model_confusion_matrix.png)
 
+---
 
-
-Feature Importance
+### Feature Importance
 
 Feature importance analysis shows that the model is mainly driven by borrower affordability, income, interest rate, loan grade, and housing profile.
+
+![Feature Importance](images/feature_importance.png)
+
+---
+
 
 
 ## Data Quality and Preprocessing
